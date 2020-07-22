@@ -1,0 +1,116 @@
+* {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding:6px ;
+
+}
+.CSS{
+font-size: 50px;
+}
+div {
+  text-align: justify;
+}
+.container {
+  padding: 30px;
+  border-left: 1px solid ;
+  height: 520px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 70px 0px 5px 6px;
+  border: 2px dashed rebeccapurple;
+  padding-top: 20px;
+  background-color: tan;
+}
+p {
+  color: red;
+}
+
+.primary-btn {
+  color: white;
+  background-color: blue;
+  padding: 13px 42px;
+  border-radius: 70px;
+  text-decoration: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 20px;
+}
+tr:hover {
+  background-color: blue;
+}
+tr:first-child{
+  background-color: cornflowerblue;
+}
+
+.tuo {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  width: 70%;
+  background-color;
+}
+.right {
+  right: 0;
+  background-color: slategrey;
+  width: 400px;
+  text-align: justify;
+  padding: 15px;
+}
+.right li {
+  list-style-type: none;
+}
+
+#animation {
+  background: red;
+  animation: mymove 5s infinite;
+  color: white;
+  width: 100%;
+}
+@keyframes mymove {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.box:hover {
+  width: 250px;
+  height: 200px;
+  background: red;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.box:hover {
+  background-color:blue;
+  cursor: pointer;
+
+}

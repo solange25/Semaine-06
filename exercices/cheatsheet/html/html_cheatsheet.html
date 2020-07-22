@@ -1,12 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>HTML Cheat Sheet</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Cheat Sheet</title>
+  </head>
+  <body>
+    <h1 class="color">HTML Cheat Sheet</h1>
+
+    <div class="content">
+      <h1>contents</h1>
+      <li> <a href="#1">Document metadata</a></li>
+      <li><a  href="#2">Sectioning root</a></li>
+      <li><a href="#3">Text content</a></li>
+      <li><a  href="#4">Inline text semantics</a></li>
+      <li><a  href="#5">Image and multimedia</a></li>
+      <li><a  href="#5">Table content</a></li>
+      <li><a  href="#7">  Forms</a></li>
+    </div>
+    <h1>Main root</h1>
+    &lt;html&gt; … &lt;/html&gt;
+    <br />
+    The HTML&lt;html&gt; element represents the root (top-level element) of an
+    HTML document, so it is also referred to as the root element. All other
+    elements must be descendants of this element
+    <br />
+    <div class="example">
+    <h4 >Exampmle</h4>
+    &lt;!DOCTYPE html&gt;
+    <br />
+    &lt;html lang="en"&gt;
+    <br />
+    &lt;head &gt;...&lt;/head &gt;
+    <br />
+    &lt;body &gt;...&lt;/body &gt;
+    <br />
+    &lt;/html &gt;
+    <br />
+  </div>
+  <h1 id="1">Document metadata</h1>
+    <table>
+      <tr>
+      <th>Document metadata</th>
+      <th>description</th>
+      </tr>
+      <tr>
+      <th><xmp><head></head></xmp></th>
+      <th>
+        The HTML<xmp><head></xmp>element contains machine-readable information (metadata) about the
+        document, like its title, scripts, and style sheets.</th>
+      </tr>
+      <tr>
+      <th><xmp><link></xmp></th>
+      <th>The HTML External Resource Link element (<link>) specifies relationships between the current
+        document and an external resource. This element is most commonly used to link to stylesheets,
+        but is also used to establish site icons (both "favicon" style icons and icons for the home screen
+        and apps on mobile devices) among other things.</th>
+      </tr>
+      <tr>
+      <th><xmp><meta></xmp></th>
+      <th>element represents metadata that cannot be represented by other HTML
+        meta-related elements, like</th>
+      </tr>
+      <tr>
+      <th><xmp></style></xmp></th>
+      <th>element contains style information for a document, or part of a document.</th>
+      </tr>
+      <tr>
+      <th><xmp> </title></xmp></th>
+      <th>Title element title defines the document's title that is shown in a browser's title
+        bar or a page's tab.
+      <h3>Example:</h3>
+      <div class="example">
+        <xmp><!DOCTYPE html></xmp>
+        <xmp><html lang="en"></html></xmp>
+      </th></div>
+        </tr>
+    </table>
+    <h1 id="2">Sectioning root</h1>
+    <table>
+      <tr>
+        <th>Sectioning root</th>
+        <th>description</th>
+      </tr>
+      <tr>
+      <th><xmp><address> … </address></xmp></th>
+      <th>element indicates that the enclosed HTML provides contact information
+      for a person or people, or for an organization.
+      </th>
+      </tr>
+      <tr>
+      <th><xmp><aside> … </aside></xmp></th>
+      <th> element represents a portion of a document whose content is only indirectly
+        related to the document's main content.</th>
+      </tr>
+      <tr>
+      <th><xmp><footer> … </footer></xmp></th>
+      <th> element represents a footer for its nearest sectioning content or sectioning
+        root element. A footer typically contains information about the author of the section, copyright
+        data or links to related documents.</th>
+      </tr>
+      <tr>
+      <th><xmp><header> … </header></xmp></th>
+      <th>element represents introductory content, typically a group of introductory
+        or navigational aids. It may contain some heading elements but also a logo, a search form, an
+        author name, and other elements
+      </th>
+      </tr>
+      <tr>
+      <th><xmp><h1> to <h6> … </h6></xmp></th>
+      <th>elements represent six levels of section headings. (h1 is the highest
+          section level and h6 is the lowest.
+          <xmp><h2>This is heading 1</h2></xmp>
+          <xmp><h2>This is heading 2</h2></xmp>
+          <xmp><h3>This is heading 3</h3></xmp>
+          <xmp><h4>This is heading 4</h4></xmp>
+          <xmp><h5>This is heading 5</h5></xmp>
+          <xmp><h6>This is heading 6</h6></xmp>
+          </th>
+      </tr>
+      <tr>
+      <th><xmp><main> … </main></xmp></th>
+      <th> element represents the dominant content of the body of a document. The
+          main content area consists of content that is directly related to or expands upon the central
+          topic of a document, or the central functionality of an application.</th>
+      </tr>
+      <tr>
+      <th><xmp><nav> … </nav></xmp></th>
+      <th>element represents a section of a page whose purpose is to provide
+        navigation links, either within the current document or to other documents. Common examples
+        of navigation sections are menus, tables of contents, and indexes.</th>
+      </tr>
+      <tr>
+      <th><xmp><section> … </section></xmp></th>
+      <th>seletion element represents a standalone section — which doesn't have a more
+      specific semantic element to represent it — contained within an HTML document</th>
+      </tr>
+      <tr>
+        <th><xmp></address></xmp></th>
+        <th><h3>Example:</h3>
+          <div class="example">
+        <xmp><address></xmp>
+        <xmp><a href="mailto:jim@rock.com">jim@rock.com</a><br></xmp>
+        <xmp><a href="tel:+13115552368">(311) 555-2368</a>
+        </xmp></th>
+        </tr>
+      </div>
+      </table>
+      <h1 id="3">Text content</h1>
+      <table>
+        <tr>
+          <th>Text content</th>
+          <th>description</th>
+        </tr>
+        <tr>
+          <th><xmp><div> … </div></xmp></th>
+          <th>The HTML Content Division element (div )is the generic container for flow content. It has no
+              effect on the content or layout until styled using CSS.</th>
+        </tr>
+        <tr>
+        <th><xmp><figure> … </figure></xmp></th>
+        <th> (Figure With Optional Caption) element represents self-contained content,
+            potentially with an optional caption, which is specified using the (figcaption) element</th>
+        </tr>
+        <tr>
+        <th><xmp><hr></xmp></th>
+        <th> element represents a thematic break between paragraph-level elements: for
+            example, a change of scene in a story, or a shift of topic within a section.</th>
+        </tr>
+        <tr>
+        <th><xmp><ol> … </ol></xmp></th>
+        <th>The HTML (ol) element represents an ordered list of items, typically rendered as a numbered
+            list.</th>
+        </tr>
+        <tr>
+          <th><xmp><li> … </li></xmp></th>
+          <th>The HTML (li) element is used to represent an item in a list.</th>
+        </tr>
+        <tr>
+          <th><xmp><p> … </p></xmp></th>
+          <th>The HTML (th)element represents a paragraph.</th>
+        </tr>
+        <tr>
+          <th><xmp><ul> … </ul></xmp></th>
+          <th>The HTML (ul) element represents an unordered list of items, typically rendered as a bulleted list
+            <h3 >Examples:</h3>
+            <div class="example">
+            <xmp><ul></ul></xmp>
+          <xmp><li>In another bowl, mix eggs, milk, and oil.</li></xmp>
+          <xmp><li>Stir both mixtures together.</li></xmp>
+          <xmp><li>Fill muffin tray 3/4 full.</li></xmp>
+          <xmp><li>Bake for 20 minutes.</li></xmp>
+          <xmp></ul></xmp>
+          </th>
+            </div>
+        </tr>
+      </table>
+      <h1 id="4">Inline text semantics</h1>
+      <table>
+        <tr>
+          <th>Inline text semantics</th>
+          <th>description</th>
+        </tr>
+          <th><xmp><a> … </a></xmp></th>
+          <th>The HTML (<a>)element (or anchor element), with its href attribute, creates a hyperlink to web
+        pages, files, email addresses, locations in the same page, or anything else a URL can address</th>
+        </tr>
+        <tr>
+        <th><xmp><br></xmp></th>
+      <th>The HTML Abbreviation element (<abbr>) represents an abbreviation or acronym; the optional
+        title attribute can provide an expansion or description for the abbreviation.</th>
+      </tr>
+    <tr>
+      <th><xmp><cite> … </cite></xmp></th>
+      <th>The HTML Citation element (<cite>) is used to describe a reference to a cited creative work, and
+          must include the title of that work.</th>
+    </tr>
+    <tr>
+      <th><xmp><code> … </code></xmp></th>
+        <th>The HTML (<code>) element displays its contents styled in a fashion intended to indicate that the
+          text is a short fragment of computer code</th>
+      </tr>
+        <tr>
+      <th><xmp><em> … </em></xmp></th>
+      <th>The HTML (<em> )element marks text that has stress emphasis. The(<em>) element can be
+          nested, with each level of nesting indicating a greater degree of emphasis. </th>
+      </tr>
+      <tr>
+        <th><xmp><mark> … </mark></xmp></th>
+        <th>The HTML Mark Text element (<mark>) represents text which is marked or highlighted for
+        reference or notation purposes, due to the marked passage's relevance or importance in the
+        enclosing context.
+      <h3>Example</h3>
+      <div class="example">
+        <xmp><blockquote></xmp>
+        (p)It was a bright cold day in April, and the clocks were striking
+        thirteen.(/p)
+        First sentence in<xmp><cite></xmp>
+          <xmp><ahref="http://www.george-orwell.org/1984/0.html"></xmp>
+          <xmp><em></xmp>Nineteen
+        Eighty-Four<xmp></ahref=></xmp>
+        <xmp></cite> </xmp>by George Orwell (Part 1, Chapter 1).
+      <xmp></footer></xmp>
+        <xmp></blockquote></xmp>
+      </div><th>
+      </tr>
+        </table>
+        <h1 id="5">Image and multimedia</h1>
+      <table>
+          <tr>
+          <th>Image and multimedia</th>
+          <th>description</th>
+        </tr>
+        <tr>
+      <th><xmp><audio> … </audio></xmp></th>
+      <th>The HTML(audio)element is used to embed sound content in documents. It may contain one
+          or more audio sources, represented using the src attribute or the (source) element: the
+          browser will choose the most suitable one. It can also be the destination for streamed media,
+          using a MediaStream.</th>
+      </tr>
+      <tr>
+      <th><xmp><img></xmp></th>
+      <th>The HTML (<img>) element embeds an image into the document.</th>
+      </tr>
+      <tr>
+          <th><xmp><track></xmp></th>
+          <th>The HTML (track) element is used as a child of the media elements (audio and video). It
+          lets you specify timed text tracks (or time-based data), for example to automatically handle
+          subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks or
+          Timed Text Markup Language (TTML).</th>
+        </tr>
+        <tr>
+        <th><xmp><video> … </video></xmp></th>
+        <th>
+      The HTML Video element video embeds a media player which supports video playback into
+      the document. You can use video for audio content as well, but the audio element may
+      provide a more appropriate user experience.
+      </th>
+        </tr>
+        </table>
+        <h1 id="6">  Table content</h1>
+        <table>
+          <tr>
+            <th>Table content</th>
+            <th>Discription</th>
+          </tr>
+          <tr>
+            <th><xmp><caption> … </caption></xmp></th>
+            <th>The HTML Table Caption element <xmp>(<caption>)</xmp> specifies the caption (or title) of a table, and if
+              used is always the first child of a .<xmp>(<table>)</xmp></th>
+          </tr>
+          <tr>
+            <th><xmp><table> … </table></xmp></th>
+            <th>The HTML table element represents tabular data —that is, information presented in a
+              two-dimensional table comprised of rows and columns of cells containing data.</th>
+          </tr>
+          <tr>
+            <th><xmp><tbody> … </tbody></xmp></th>
+            <th>The HTML Table Body element tbody encapsulates a set of table rows elements,
+              indicating that they comprise the body of the table table </th>
+          </tr>
+          <tr>
+          <th><xmp><td> … </td></xmp></th>
+          <th>The HTML td element defines a cell of a table that contains data. It participates in the table
+            model</th>
+          </tr>
+            <tr>
+              <th><xmp><th> … </th></xmp></th>
+              <th>The HTML th element defines a cell as header of a group of table cells. The exact nature of
+                this group is defined by the scope and headers attributes</th>
+            </tr>
+            <tr>
+              <th><xmp><tr> … </tr></xmp></th>
+              <th><xmp>Example:
+                <xmp> <table></xmp>
+                <xmp><thead></xmp>
+                <xmp><tr></xmp>
+              <xmp><colspan="2"></xmp>The table header
+                <xmp></tr></xmp>
+                <xmp> </thead></xmp>
+                <xmp><tbody></tbody></xmp>
+                <xmp><tr></xmp>
+                <xmp> <td>The table body</td></xmp>
+                <xmp>with two columns</xmp>
+                <xmp></tr></xmp>
+                <xmp></tbody></xmp>
+                <xmp></table></xmp></th>
+        </table>
+        <table>
+      <h1 >forms</h1>
+      <tr>
+        <th id="7"> Forms</th>
+        <th>description</th>
+      </tr>
+      <tr>
+        <th><xmp><button> … </button></xmp></th>
+        <th>The HTML button element represents a clickable button, which can be used in forms or
+        anywhere in a document that needs simple, standard button functionality.</th>
+      </tr>
+      <tr>
+          <th><xmp><fieldset> … </fieldset></xmp></th>
+          <th>The HTML <fieldset> element is used to group several controls as well as labels (label)
+              within a web form.</th>
+        </tr>
+      <tr>
+        <th><xmp><form> … </form></xmp></th>
+        <th>The HTML (form) element represents a document section that contains interactive controls for
+        submitting information to a web server</th>
+      </tr>
+      <tr>
+        <th><xmp><input></xmp></th>
+        <th>The HTML <input> element is used to create interactive controls for web-based forms in order
+          to accept data from the user; a wide variety of types of input data and control widgets are
+          available, depending on the device and user agent.
+        </th>
+      </tr>
+      <tr>
+        <th><xmp><label> … </label></xmp></th>
+        <th>The HTML <xmp><legend></xmp> element represents a caption for the content of its parent <xmp><fieldset></xmp>.
+      </th>
+      </tr>
+      <tr>
+        <th><xmp><progress> … </progress></xmp></th>
+        <th>The HTML  <xmp><progress></xmp> element displays an indicator showing the completion progress of a
+        task, typically displayed as a progress bar.
+        </th>
+      </tr>
+      <tr>
+        <th> <xmp><textarea> … </textarea></xmp></th>
+        <th>The HTML (textarea) element represents a multi-line plain-text editing control, useful when
+        you want to allow users to enter a sizeable amount of free-form text, for example a comment
+        on a review or feedback form
+        <h3>Example:</h3>
+        <div class="example">
+          <xmp><form action="" method="get" class="form-example"></xmp>
+          <xmp><div class="form-example"></xmp>
+          <xmp><label for="name">Enter your name: </label></xmp>
+          <xmp><input type="text" name="name" id="name" required></xmp>
+          <xmp></div></xmp>
+          <xmp><div class="form-example"></xmp>
+          <xmp><label for="email">Enter your email: </label></xmp>
+          <xmp><input type="email" name="email" id="email" required></xmp>
+          <xmp> </div></xmp>
+          <xmp><div class="form-example"></xmp>
+          <xmp><input type="submit" value="Subscribe!"></xmp>
+          <xmp></div></xmp>
+          <xmp> </form></xmp>
+          </xmp>
+        </th>
+        </div>
+      </tr>
+    </table>
+  </body>
 </html>
