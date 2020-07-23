@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 20px;
+  padding: 1em;
+  font-family: monospace;
+  box-sizing: border-box;
+  background-color: thistle;
+  font-size: 15px;
+}
+.container {
+  padding: 20px;
+  margin: 20px;
+  word-break: break-all;
+}
+.color {
+ color: firebrick;
+}
+.side {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+h1{
+  color: blue;
+}
+  .left {
+    left: 0;
+    width: 500PX;
+    background-color;
+  }
+  .right {
+    right: 0;
+    background-color: wheat;
+    width: 400px;
+    text-align: justify;
+    padding: 15px;
+  }
+  a :hover{
+    background-color: rgb(209, 221, 218);
+
+  }
+  li {
+    list-style-type: none;
+  }
+  #Cheat{
+    color: black;
+    font-style: inherit;
+    text-align:center;
+    font-size: 40px;
+
+  }
+

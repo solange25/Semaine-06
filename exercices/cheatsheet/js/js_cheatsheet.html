@@ -7,7 +7,147 @@
   <title>Javascript Cheat Sheet</title>
 </head>
 <body>
-  
-</body>
-<script src="script.js"></script>
+<h1 id="Cheat">Javascript Cheat Sheet</h1>
+  <div class=" Left">
+  <h1 id="1">JAVASCRIPT BASICS </h1>
+  <h3>Including JavaScript in an HTMLPage<h3>
+    <xmp><script type="text/javascript"></script> </xmp>
+    <xmp> //</xmp>JS code goes here <br>
+    <xmp></script> </xmp>
+    <h3>Call an External JavaScript File </h3>
+    Single line comments<xmp> - // </xmp>
+    Multi-line comments <xmp></xmp>
+    <xmp> - /* comment here */ </xmp>
+
+    <h1 id="2">VARIABLES IN JAVASCRIPT </h1>
+    <h4>const, let </h4>
+    <P>const — Can not be reassigned and not accessible before they appear
+      within the <br>let — Similar to const, however, let variable can be reassigned but
+      not re-declared.</P>
+      <h4>Data Types </h4>
+      Numbers —<em class="color"> let age = 23 </em><br>
+      Variables <em class="color">— let x </em><br>
+      Text (strings)<em class="color"> — let a = "init" </em><br>
+      Operations<em class="color">— let b = 1 + 2 + 3 </em><br>
+      True or fase statements <em class="color">— var c = true </em><br>
+      Constant numbers<em class="color">— const PI = 3.14 </em><br>
+      <h4>Objects </h4>
+      <em class="color">var person =<xmp>{</xmp>  </em> <br>
+      <em class="color">firstName:"John", </em><br>
+      <em class="color"> lastName:"Doe", </em><br>
+      <em class="color"> age:20, </em><br>
+      <em class="color">nationality:"German" </em><br>
+      <em class="color"><xmp>}; </xmp></em><br>
+      <h1 id="3">ARRAYS</h1>
+    <xmp>let className = ["Ssolange", "anaita", "cloude"];</xmp>
+    <h4>Array Methods </h4>
+    <strong class="color">concat()</strong> — Join several arrays into one<br>
+    <strong class="color">indexOf()</strong> — Returns the primitive value of the specified object<br>
+    <strong class="color">join()</strong>— Combine elements of an array into a single string and return<br>
+    <strong class="color">lastIndexOf() </strong> — Gives the last position at which a given element
+    appears in an array<br>
+
+    <strong class="color">pop()</strong>— Removes the last element of an array<br>
+    <strong class="color">push()</strong> Add a new element at the end<br>
+    <strong class="color">reverse()()</strong>— Sort elements in descending order<br>
+    <strong class="color">shift()</strong>— Remove the first element of an array<br>
+    <strong class="color">slice()</strong> — Pulls a copy of a portion of an array into a new array<br>
+    <h4>expamle</h4>
+    <p>
+
+    </p>
+    <h1 id="4">OPERATORS </h1>
+    <strong class="color">+ </strong>— Addition<br>
+    <strong class="color">- </strong>Subtraction<br>
+    <strong class="color">*</strong>Multiplication<br>
+    <strong class="color">/</strong>Division<br>
+    <strong class="color">(...) </strong> Grouping operator, operations within brackets are executed
+    earlier than those outside
+    <br>
+    <strong class="color">%</strong> Modulus (remainder )<br>
+    <strong class="color">++</strong>Increment numbers<br>
+    <strong class="color">--</strong>Decrement numbers<br>
+    <h4>Comparison Operators </h4>
+    <strong class="color">== </strong> Equal to<br>
+    <strong class="color">===</strong> Equal value and equal type<br>
+    <strong class="color">!= </strong>Not equal<br>
+    <strong class="color">!== </strong> Not equal value or not equal type<br>
+    <strong class="color"> > </strong>Greater than<br>
+    <strong class="color"> <  </strong>Less than<br>
+    <strong class="color"> >=</strong>Greater than or equal to<br>
+    <h4>Logical Operators  </h4>
+    <strong class="color"> &&</strong>AND statement<br>
+    <strong class="color"> || </strong>OR statement<br>
+    <strong class="color">!  </strong>  Logical not<br>
+    <h4>Bitwise Operators</h4>
+    <strong class="color">& </strong>AND statement<br>
+    <strong class="color"> | </strong> OR statement<br>
+    <strong class="color">  ~ </strong>NOT<br>
+    <strong class="color"> ^ </strong> XOR<br>
+    <strong class="color"> <<  </strong>Left shift<br>
+    <strong class="color"> >> </strong> Right shift<br>
+    <strong class="color"> >>></strong>Zero fill right shift<br>
+    <h1 id="5">FUNCTIONS </h1>
+    <strong class="color"> function name(parameter1, parameter2, parameter3) <XMP> {</XMP></strong><br>
+    <strong class="color"> <xmp>// </XMP>what the function does </strong><br>
+    <strong class="color"><xmp>}</xmp> </strong><br>
+    <h4>Outputting Data </h4>
+    <strong class="color">alert()  </strong> Output data in an alert box in the browser window<br>
+    <strong class="color">confirm() </strong> Opens up a yes/no dialog and returns true/false depending
+    on user click<br>
+    <strong class="color">console.log() </strong>— Writes information to the browser console, good for
+    debugging purposes
+    <br>
+    <strong class="color"> document.write()</strong> Write directly to the HTML document<br>
+    <strong class="color">prompt() </strong> Creates an dialogue for user input<br>
+    <H1 id="6">JAVASCRIPT LOOPS </H1>
+    <strong class="color">for (before loop; condition for loop; execute after loop) {
+    </strong><br>
+    <strong class="color">  <xmp>//</<xmp>  </strong>what to do during the loop<br>
+    <strong class="color"><xmp>}</<strong>  <br>
+      <strong class="color">for</strong> The most common way to create a loop in JavaScript <br>
+      <strong class="color">while </strong>Sets up conditions under which aloop executes<br>
+      <strong class="color">do while </strong> Similar to the while loop, however, it executes at least
+      once and performs a check at the end to see if the condition is met
+      to execute again<br>
+      <strong class="color">break </strong> Used to stop and exit the cycle at certain conditions<br>
+      <h1 id="7">IF - ELSE STATEMENTS </h1>
+      <strong class="color"> if (condition) <xmp>{</xmp><br>
+        <xmp>//</xmp> what to do if condition is met<br>
+        <xmp>} else {</xmp>
+        // what to do if condition is not met
+        <xmp>//</xmp> what to do if condition is not met<br>
+        <xmp>} </xmp>
+        </strong>
+        <h1 id="8">NUMBERS AND MATH </h1>
+        <h4>Number Properties </h4>
+        <strong class="color">MAX_VALUE </strong> The maximum numeric value representable in JavaScript <br>
+        <strong class="color">MIN_VALUE </strong> Smallest positive numeric value representable in
+        JavaScript<br>
+        <strong class="color"> NaN</strong> The “Not-a-Number” value<br>
+        <strong class="color"> NEGATIVE_INFINITY </strong> The negative Infinity value<br>
+        <strong class="color"> POSITIVE_INFINITY </strong> Positive Infinity value<br>
+        </div>
+      </secection>
+      <div class="side right">
+        <ul>
+          <li> <a  href="#1">JAVASCRIPT BASICS</a></li>
+          <br><br>
+          <li> <a href="#2">VARIABLES IN JAVASCRIPT </a></li>
+          <br><br>
+          <li> <a  href="#3">ARRAYS</a></li>
+          <br><br>
+          <li> <a  href="#4">OPERATORS </a></li>
+          <br><br>
+          <li> <a href="#5">FUNCTIONS </a></li>
+          <br><br>
+          <li> <a href="#6">JAVASCRIPT LOOPS </a></li>
+          <br><br>
+          <li> <a href="#7"> IF - ELSE STATEMENTS </a></li>
+          <br><br>
+          <li> <a href="#8"> NUMBERS AND MAT</a></li>
+        </ul>
+      </div>
+  </body>
+  <script src="script.js"></script>
 </html>
